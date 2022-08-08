@@ -1,14 +1,30 @@
-.nav{
-    width: 100%;
-    justify-content: right;
+.container{
+    background-color: #c6d9c3;
+    border-radius: 10px;
+    padding: 5px;
 }
 
-.logo-brand{
-    content: left;
+body{
+  background-color: #c6d9c3;
+}
+
+.button{
+  color:#fff;
+}
+
+#navbar_logo {
+    max-width: 100%;
 }
 
 .navbar{
     border-radius: 5px;
+    background-color: #c6d9c3;
+}
+
+.nav-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
 }
 
 header.head {
@@ -16,7 +32,20 @@ header.head {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    background-color: #9c9c9c;
+    background-color: #c6d9c3;
+}
+
+.beginning {
+	text-align: center;
+	text-indent: 30px;
+	padding: 20px;
+	padding-left:50px;
+	padding-right: 50px;
+	font-size: 1.2em;
+	line-height: 50px;
+	color: #a1866a;
+	font-family: Bell MT;
+	background: white;
 }
 
 .background-media video {
@@ -44,4 +73,40 @@ header.head {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  #introCarousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 100vh;
+  }
+
+  .carousel-item:nth-child(1) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .carousel-item:nth-child(2) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .carousel-item:nth-child(3) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  /* Height for devices larger than 576px */
+  @media (min-width: 992px) {
+    #introCarousel {
+      margin-top: -58.59px;
+    }
+  }
+
+  .navbar .nav-link {
+    color: #fff !important;
   }
