@@ -1,11 +1,11 @@
 .container{
-    background-color: #c6d9c3;
+    background-color: #a4be9f;
     border-radius: 10px;
     padding: 5px;
 }
 
 body{
-  background-color: #c6d9c3;
+  background-color: #a4be9f;
 }
 
 .button{
@@ -18,7 +18,7 @@ body{
 
 .navbar{
     border-radius: 5px;
-    background-color: #c6d9c3;
+    background-color: #a4be9f;
 }
 
 .nav-item {
@@ -27,12 +27,19 @@ body{
   font-size: 20px;
 }
 
+.big-text {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  display: block;
+}
+
 header.head {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    background-color: #c6d9c3;
+    background-color: #a4be9f;
 }
 
 .beginning {
