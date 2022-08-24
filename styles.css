@@ -65,11 +65,30 @@ header.head {
   z-index:0;
 }
 
-.bottom-nav {
-  text-decoration: none;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: 0.3s;
+.context1 {
+  background-color: white;
+	text-align: justify;
+	padding: 20px;
+	padding-left:110px;
+	font-size: 1.5em;
+  display: inline-block;
+  font-family: 'Times New Roman', Times, serif;
+  word-wrap: break-word;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 a:hover {
@@ -77,21 +96,28 @@ a:hover {
   color: black;
   border-radius: 20px;
   text-decoration: none;
-  padding: 20px;
+  transition: 0.3s;
+  font-size: 20px;
 }
 
 .previous {
   background-color: #a4be9f;
   color: white;
   padding: 20px;
+  padding-left: 60px;
   border-radius: 20px;
+  float: left;
+  font-size: 20px;
 }
 
 .next {
   background-color: #a4be9f;
   color: white;
   padding: 20px;
+  padding-right: 60px;
   border-radius: 20px;
+  float: right;
+  font-size: 20px;
 }
 
 .overlay-text h2 {
@@ -102,9 +128,51 @@ a:hover {
 	transform: translate (-50%, -50%);
 	width: 100%;
   color: white;
-  font-size: 60px;
+  font-size: 120px;
 	font-weight: 700;
+  text-decoration: wavy;
 	letter-spacing: 8px;
 	margin-bottom: 20px;
+  font-family: Arial;
+  font-size: 60px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  box-sizing: border-box;
 }
