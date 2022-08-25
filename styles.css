@@ -102,6 +102,10 @@ img {
   padding: 10px;
 }
 
+.row{
+  margin: 0px;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -114,6 +118,11 @@ img {
   .column {
     width: 100%;
   }
+}
+
+footer{
+  border-radius: 5px;
+  width: 100%;
 }
 
 a:hover {
@@ -221,4 +230,24 @@ body {
 #demo  .carousel-control-next{
     top: 35%;
     bottom: 35%;
+}
+
+.start {
+  background-color: #a4be9f;
+  color: white;
+  padding: 20px;
+  padding-right: 60px;
+  border-radius: 20px;
+  float: left;
+  font-size: 20px;
+}
+
+.end {
+  background-color: #a4be9f;
+  color: white;
+  padding: 20px;
+  padding-right: 60px;
+  border-radius: 20px;
+  float: right;
+  font-size: 20px;
 }
