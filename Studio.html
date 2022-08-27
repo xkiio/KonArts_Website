@@ -55,25 +55,32 @@
 </section>
 
 <section class="context1">
-    <div class="row">
-        <div class="column">
-          <p class="lefttext">Some text..</p>
-        </div>
-        <div class="column">
-          <img src="images/Chara-design_poster1.jpg" title="Da Yu Hai Tang Poster" alt="Animation Poster">
-        </div>
-    </div>
-</section>
-
-<section class="context1">
   <div class="row">
     <div class="column">
-      <img src="images/Studio-ghibli-snippet.jpg" title="Studio Ghibli Animation Snippet" alt="Animation Snippet">
+      <a class="Images" data-toggle="popover" data-placement="Left" data-trigger="hover" title="Ben Ozeri Animation Concept" data-content="The individual framings of an animation, created by Ben Ozeri.">
+        <img class="product_thumbnail" src="images/Character-design1.jpg" alt="Animation Concept">
+      <a class="Images" data-toggle="popover" data-placement="Left" data-trigger="hover" title="Kyoto Animation Clip" data-content="An unfinished snippet of Kyoto Animation's work, featuring the character named Baja.">
+        <img class="product_thumbnail" src="videos/Animation-clip2.gif" alt="Animation Concept">
+      </a>
+      </a>
     </div>
     <div class="column">
       <p class="righttext">Some text..</p>
     </div>
-</div>
+  </div>
+</section>
+
+<section class="context1">
+  <div class="row">
+      <div class="column">
+        <p class="lefttext">Some text..</p>
+      </div>
+      <div class="column">
+        <a class="Images" data-toggle="popover" data-placement="Left" data-trigger="hover" title="BBC Clique Animation Clip" data-content="A 2D animation snippet created from the angecy, BBC Clique, featuring the work of Rebecca Mock.">
+          <img class="product_thumbnail" src="videos/Animation-clip1.gif" alt="Animation Clip 1">
+        </a>
+      </div>
+  </div>
 </section>
 
 <section class="context2">
@@ -92,19 +99,19 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="video-wrapper">
-                  <iframe width="1046" height="438" src="https://www.youtube.com/embed/QgyJ0Uj2Xg0" title="Under This Luminous Sky | Animated Short Film 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="885" height="498" src="https://www.youtube.com/embed/1Nw_c_CqPso" title="Telling a Story in Every Frame | SPIDER-MAN: INTO THE SPIDER-VERSE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
   
             <div class="carousel-item">
               <div class="video-wrapper">
-                  <iframe width="885" height="498" src="https://www.youtube.com/embed/jKh-DP89FPY" title="SUNDOWN - Animation Short Film 2020 - GOBELINS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="885" height="498" src="https://www.youtube.com/embed/CiXFzjnxor0" title="2D Action Animation - Full Process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
   
             <div class="carousel-item">
               <div class="video-wrapper">
-                  <iframe width="885" height="498" src="https://www.youtube.com/embed/eatkKt48nsE" title="'Kuneho' | Original animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="747" height="498" src="https://www.youtube.com/embed/KzUCXe-GI9Y" title="Steven Universe The Movie Change Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
   
@@ -127,4 +134,11 @@
     <a href="work.html" class="previous">&laquo; Previous</a>
     <a href="practice.html" class="next">Next &raquo;</a>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+  });
+  </script>
+
 </body> 
