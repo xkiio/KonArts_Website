@@ -75,10 +75,14 @@
 <section class="context1">
     <div class="row">
         <div class="column">
-          <p class="firsttext">Some text..</p>
+          <p class="lefttext">"Animation is not the art of drawings that move but the art of movements that are drawn."<br>
+          - Norman Mclaren</p>
+          <p class="lefttext"><br>some text..</p>
         </div>
         <div class="column">
-          <img src="images/Chara-design_poster1.jpg" title="Da Yu Hai Tang Poster" alt="Animation Poster">
+          <a class="Images" data-toggle="popover" data-placement="Left" data-trigger="hover" title="Da Yu Hai Tang Poster" data-content="'Big Fish & Begonia' (2016), the 2D animation movie directed by Xuan Liang and Chun Zhang.">
+            <img class="product_thumbnail" src="images/Chara-design_poster1.jpg" alt="Animation Poster">
+          </a>
         </div>
     </div>
 </section>
@@ -127,10 +131,12 @@
 <section class="context1">
   <div class="row">
     <div class="column">
-      <img src="images/Studio-ghibli-snippet.jpg" title="Studio Ghibli Animation Snippet" alt="Animation Snippet">
+      <a class="Images" data-toggle="popover" data-placement="Left" data-trigger="hover" title="'Spirited Away' Scene" data-content="'Spirited Away' (2001), the 2D animation movie created by the company, Studio Ghibli.">
+        <img class="product_thumbnail" src="Images/Studio-ghibli-snippet.jpg" alt="Animation Snippet">
+      </a>
     </div>
     <div class="column">
-      <p class="secondtext">Some text..</p>
+      <p class="righttext">Some text..</p>
     </div>
 </div>
 </section>
@@ -145,4 +151,10 @@
     <a href = "https://www.twitter.com/" target="_blank"><img src="Images/followus_twitter_40x40.png" style="width:40px" alt="Twitter Icon">
     <a href = "https://www.youtube.com/" target="_blank"><img src="Images/followus_youtube_40x40.png" style="width:40px" alt="Youtube Icon">
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+  });
+  </script>
 </body> 
