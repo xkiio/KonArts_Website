@@ -99,19 +99,19 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="video-wrapper">
-                <iframe width="885" height="498" src="https://www.youtube.com/embed/1Nw_c_CqPso" title="Telling a Story in Every Frame | SPIDER-MAN: INTO THE SPIDER-VERSE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="885" height="498" id="video_pause" src="https://www.youtube.com/embed/1Nw_c_CqPso" title="Telling a Story in Every Frame | SPIDER-MAN: INTO THE SPIDER-VERSE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
   
             <div class="carousel-item">
               <div class="video-wrapper">
-                <iframe width="885" height="498" src="https://www.youtube.com/embed/CiXFzjnxor0" title="2D Action Animation - Full Process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="885" height="498" id="video_pause" src="https://www.youtube.com/embed/CiXFzjnxor0" title="2D Action Animation - Full Process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
   
             <div class="carousel-item">
               <div class="video-wrapper">
-                <iframe width="747" height="498" src="https://www.youtube.com/embed/KzUCXe-GI9Y" title="Steven Universe The Movie Change Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="747" height="498" id="video_pause" src="https://www.youtube.com/embed/KzUCXe-GI9Y" title="Steven Universe The Movie Change Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
   
@@ -140,5 +140,11 @@
     $('[data-toggle="popover"]').popover();
   });
   </script>
+
+<script type="text/javascript">
+  $("#demo").carousel({ interval: false}); // this prevents the auto-loop
+  var vid1 = document.getElementById("video_pause");
+  vid1.onended = function() { $("#demo").carousel('next'); };
+</script>
 
 </body> 

@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
   background-color: #a4be9f;
+  overflow-x: hidden;
 }
 
 .button{
@@ -27,19 +32,6 @@ body{
   transition: 0.3s;
 }
 
-.button:hover {
-  color: black;
-  text-decoration: none;
-}
-
-header.head {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #a4be9f;
-}
-
 .beginning {
 	text-align: justify;
 	text-indent: 30px;
@@ -65,13 +57,27 @@ header.head {
   z-index:0;
 }
 
+.context1,
+.context2,
+.context3 {
+  background-color: #fff;
+}
+
 .context1 {
-  background-color: white;
 	font-size: 1.5em;
   font-family: 'Times New Roman', Times, serif;
   margin: 0;
   padding: 50px;
-  border: 0;
+}
+
+.context2 {
+	text-align: justify;
+  align-items: center;
+}
+
+.context3 {
+	justify-content: center;
+
 }
 
 .lefttext{
@@ -85,30 +91,15 @@ header.head {
   padding-right: 60px;
 }
 
-.context2 {
-  background-color: white;
-	text-align: justify;
-  align-items: center;
-}
-
-img { 
-  max-width: 100%; height: auto; 
-}
-
 .column {
   float: left;
   width: 50%;
   padding: 10px;
 }
 
-.threecolumn {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
-
 .row {
   margin: 0px;
+  justify-content: center;
 }
 
 /* Clear floats after the columns */
@@ -120,23 +111,54 @@ img {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column
-  .threecolumn {
+  .column {
     width: 100%;
   }
 }
 
-footer{
-  border-radius: 5px;
-  width: 100%;
+:root {
+  --font: 1rem;
+  --line: calc(var(--font) * 2);
+  --move: calc(-1 * var(--line));
 }
 
-a:hover {
+.item > img {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+.grid {
+  display: grid;
+  /* using 1fr will wreck the ellipsis fix for text wrapping */
+  grid-gap: 1rem;
+  grid-template-rows: auto;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.label {
+  font-size: 2rem;
+  line-height: 2;
+  color: white;
+  background-color: hsla(0, 0%, 0%, 0.48);
+  margin-top: -5.7rem;
+  margin-left: 3.7rem;
+  margin-right: 3.7rem;
+  transform: translateY(var(--move));
+  margin-bottom: var(--move);
+  text-overflow:ellipsis;
+  text-align: center;
+  white-space: nowrap;
+  overflow:hidden;
+  position: relative;
+  border-radius: 5px;
+}
+
+a:hover,
+.button:hover {
   color: black;
-  border-radius: 20px;
   text-decoration: none;
-  transition: 0.3s;
-  font-size: 20px;
 }
 
 .previous {
@@ -226,10 +248,6 @@ a:hover {
   margin-right: auto;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -262,22 +280,20 @@ h3 {
   font-weight: bold;
 }
 
-.start {
-  background-color: #a4be9f;
-  color: white;
-  padding: 20px;
-  padding-right: 60px;
-  border-radius: 20px;
-  float: left;
-  font-size: 20px;
-}
-
+.start,
 .end {
   background-color: #a4be9f;
   color: white;
   padding: 20px;
   padding-right: 60px;
   border-radius: 20px;
-  float: right;
   font-size: 20px;
+}
+
+.start {
+  float: left;
+}
+
+.end {
+  float: right;
 }
