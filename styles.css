@@ -70,6 +70,12 @@ body{
   padding: 50px;
 }
 
+.context1 p {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 6rem;
+}
+
 .context2 {
 	text-align: justify;
   align-items: center;
@@ -77,7 +83,6 @@ body{
 
 .context3 {
 	justify-content: center;
-
 }
 
 .lefttext{
@@ -88,7 +93,6 @@ body{
 
 .righttext{
   text-align: left;
-  padding-right: 60px;
 }
 
 .column {
@@ -165,8 +169,7 @@ body{
 }
 
 a:hover,
-.button:hover,
-div.label p:hover {
+.button:hover {
   color: black;
   text-decoration: none;
   transition: 0.3s;
