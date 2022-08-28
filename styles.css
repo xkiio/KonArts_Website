@@ -123,42 +123,53 @@ body{
 }
 
 .item > img {
-  width: 100%;
+  width: 90%;
   height: auto;
-  padding: 50px;
+  display: block;
+}
+
+.grid img {
+  width: 90%;
+  border-radius: 5px;
 }
 
 .grid {
   display: grid;
-  /* using 1fr will wreck the ellipsis fix for text wrapping */
-  grid-gap: 1rem;
+  grid-template-columns: repeat(3, calc( ((100vw - 4rem)/3)) ); 
+  grid-gap: 9px;
   grid-template-rows: auto;
   margin: 1rem 0;
-  padding: 0 1rem;
+  padding-left: 38px;
+  padding-bottom: 38px;
 }
 
 .label {
-  font-size: 2rem;
-  line-height: 2;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 0 1rem;
+  margin: 5;
   color: white;
+  text-decoration: none;
   background-color: hsla(0, 0%, 0%, 0.48);
-  margin-top: -5.7rem;
-  margin-left: 3.7rem;
-  margin-right: 3.7rem;
+  height: 2rem;
+  
   transform: translateY(var(--move));
   margin-bottom: var(--move);
+  margin-right: 3rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
   text-overflow:ellipsis;
-  text-align: center;
   white-space: nowrap;
   overflow:hidden;
-  position: relative;
-  border-radius: 5px;
 }
 
 a:hover,
-.button:hover {
+.button:hover,
+div.label p:hover {
   color: black;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .previous {
